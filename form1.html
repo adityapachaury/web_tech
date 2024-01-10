@@ -1,0 +1,103 @@
+<html>
+<head><title>Form</title>
+<script>
+function validate(){
+var a=document.getElementById("pass").value;
+var b=document.getElementById("cpass").value;
+var c=document.getElementById("mob").value;
+var phonenum= /^\d{10}$/;
+if (a!=b)
+{
+alert("Wrong Password");
+return false;
+}
+else if (!c.match(phonenum)){
+alert("Mobile number must be of 10 digits.");
+return false;
+}
+else{
+alert("Congrats!!!  registered successfully.");
+return true;
+}
+
+}
+</script>
+</head>
+<body>
+<table border=1 width=100% height=100% bgcolor=orange>
+<tr>
+<th colspan=2>About Yourself
+<form action="abc.php" method="get">
+<tr>
+<th>Student Name <td><input type="text" name="t1" required><br>
+<tr>
+<th>Father's name <td><input type="text" name="t4" required><br>
+<tr>
+<th>DOB<td><input type="date" name="dob" required><br>
+<tr>
+<th>Gender <td><input type="radio" name="gen" value="male">Male<br>
+<input type="radio" name="gen" value="female">Female<br>
+<tr>
+<th>Mobile <td><input type="number" id=mob placeholder="Enter your mobile number" required><br>
+<tr>
+<th>Email <td><input type="email" name="t6"><br>
+<tr>
+<th>Course<td><select name="t2"><br>
+<option value="C0">-select-your-course-</option>
+<option value="C1">UG</option>
+<option value="C2">PG</option>
+
+<tr>
+<th>Hobies <td><input type="checkbox" name="hob" value="singing">Singing<br>
+<input type="checkbox" name="hob" value="cricket">Cricket<br>
+<input type="checkbox" name="hob" value="eating">Eating<br>
+<input type="checkbox" name="hob" value="dancing">Dancing<br>
+<tr>
+<th>State<td><select name="state">
+<option value="s0">-select-your-state-</option>
+<option value="s1">Andhra Pradesh</option>
+<option value="s2">Arunachal Pradesh</option>
+<option value="s3">Assam</option>
+<option value="s4">Bihar</option>
+<option value="s5">Chhattisgarh</option>
+<option value="s6">Goa</option>
+<option value="s7">Gujrat</option>
+<option value="s8">Haryana</option>
+<option value="s9">Himachal Pradesh</option>
+<option value="s10">Jammu & Kashmir</option>
+<option value="s11">Jharkhand</option>
+<option value="s12">Karnataka</option>
+<option value="s13">Kerala</option>
+<option value="s14">Madhya pradesh</option>
+<option value="s15">Maharashtra</option>
+<option value="s16">Manipur</option>
+<option value="s17">Meghalaya</option>
+<option value="s18">Mizoram</option>
+<option value="s19">Nagaland</option>
+<option value="s20">Odisha</option>
+<option value="s21">Punjab</option>
+<option value="s22">Rajasthan</option>
+<option value="s23">Sikkim</option>
+<option value="s24">Tamilnadu</option>
+<option value="s25">Telangana</option>
+<option value="s26">Tripura</option>
+<option value="s27">Uttar Pradesh</option>
+<option value="s28">Uttarakhand</option>
+<option value="s29">West Bengal</option>
+<tr>
+<th>Address <td><textarea name="comments" placeholder = "Enter your address"></textarea><br>
+<tr>
+<th>Password<td><input type=password name=t2 id=pass placeholder="Password"></td></td>
+<tr>
+<th>Confirm Password<td><input type=password name=t3 id=cpass placeholder="Confirm Password"></td></td>
+<tr>
+<th colspan=2><input type=submit value="Submit" onclick="return validate()"></th>
+
+
+
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            function myTime()
+            {
+                var d = new Date(); document.getElementById("demo").innerHTML= d.toLocaleTimeString(); 
+
+            }
+        </script>
+
+    </head>
+    <body>
+        <button type="button" onclick="setInterval(function(){myTime()}, 1000);" >Start clock</button>
+        <p id="demo"></p>
+    </body>
+</html>

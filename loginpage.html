@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+            function validate(){
+                var a = document.getElementById("Username").value;
+                var b = document.getElementById("pass").value;
+                var c = "Aditya";
+                var d = "pachaury";
+                
+                if (a!=c || b!=d){
+                    alert("Sorry!!! User not Found");
+                    return false;
+                }
+                else {
+                    alert("Logged in successfully!!!");
+                    return true;
+                    
+                }
+            }
+        </script>
+
+        <style>
+            *{
+                background-image: url('login.jpg');
+                background-size: cover;
+                color: white;
+            }
+            *{
+                text-align: center;
+                text-shadow: gold;
+                background-color: aliceblue;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post">
+            <h1>Login Page</h1>
+            Enter Username or Mobile number
+            <input type=text id="Username" placeholder="Username"></p>
+            Enter your Password
+            <input type="password" id="pass" placeholder="Password"><br>
+            <input type="submit" value="LogIn" onclick="return validate()">
+            <h4 class="display-4">@aditya_x47</h4>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            .card {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid red;
+    border-radius: 5px;
+    animation: rotate 5s linear infinite;
+  }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="content">
+                <div class="card-body">
+                    <img src="adi.jpg" alt="none" width="75" height="75"> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro odit earum nulla ducimus perferendis vitae inventore corporis exercitationem atque reprehenderit commodi nihil dolore molestiae saepe a, minima rerum quia.</p>
+
+                </div>
+            
+            </div>
+          </div>
+    </body>
+</html>

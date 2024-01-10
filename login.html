@@ -1,0 +1,44 @@
+<html>
+<head>
+<script>
+function validate(){
+var a = document.getElementById("username").value;
+var b = document.getElementById("pass").value;
+var c = "Web";
+var d = "Technology";
+if (a!=c || b!=d)
+{
+alert("User not found .");
+return false;
+}
+else
+{
+alert("Welcome.");
+return true;
+}
+}
+</script>
+
+<style>
+h1{
+text-align:center;
+}
+</style>
+
+</head>
+<body>
+<form method="get" text-align="center">
+<h1>Login Page</h1>
+<table>
+<tr>
+<th>Enter username or mobile number</th>
+<th><input type=text id=username placeholder="Enter username"></th><br>
+<tr>
+<th>Enter Your Password</th>
+<th><input type=password id=pass placeholder="Password"></th><br>
+<tr>
+<th colspan=2><input type=submit value="Log in" onclick="return validate()"></th>
+</table>
+</form>
+</body>
+<html>
